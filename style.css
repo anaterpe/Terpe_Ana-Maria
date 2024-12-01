@@ -1,0 +1,101 @@
+body {
+    background-color: #fae6e7;
+    font-family: Garamond, serif;
+    align-items: center;
+}
+
+h3 {
+    color: #b32478;
+    text-align: center;
+    font-size: 30px;
+}
+
+h1 {
+    background-color: #f191ac;
+    box-shadow: 0 4px 8px #000000;
+}
+
+th {
+    text-align: center;
+    background-color: #f191ac;
+}
+
+td {
+    background-color: white;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+}
+
+table {
+    width: 50%;
+}
+
+.diagrama-retea {
+    width: 90%;
+    border-radius: 10px;
+}
+
+.diagrama {
+    background-color: #fff6f9;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    width: 50%;
+}
+
+ul {
+    text-align: left;
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        scale: 0.5;
+    }
+    to {
+        opacity: 1;
+        scale: 1;
+    }
+}
+
+table, .diagrama, .imagini img {
+    margin: auto;
+    box-shadow: 0 4px 8px #000000;
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+    margin-bottom: 40px;
+}
+
+.imagini {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+.imagini img {
+    width: 48%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px #000000;
+}
+
+[name="slide"] {
+    display: none;
+    width: 50%;
+    margin: auto;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px #000000;
+}
+
+#resurse {
+    cursor: pointer;
+}
